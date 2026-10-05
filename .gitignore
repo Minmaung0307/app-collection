@@ -1,0 +1,145 @@
+# ==========================================================
+# DevCamp Academy — .gitignore
+# React + Vite + Firebase + Cloud Functions
+# ==========================================================
+
+# --------------------------
+# Dependencies
+# --------------------------
+node_modules/
+functions/node_modules/
+
+# --------------------------
+# Build output
+# --------------------------
+dist/
+build/
+functions/lib/
+
+# --------------------------
+# Vite / Environment files
+# --------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Keep example env file
+!.env.example
+
+# --------------------------
+# Firebase local/cache files
+# --------------------------
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+firestore-debug.log
+firestore-debug.*.log
+ui-debug.log
+ui-debug.*.log
+
+# Firebase emulator data
+firebase-export/
+emulator-data/
+
+# --------------------------
+# Stripe / Secrets
+# --------------------------
+.stripe/
+stripe-debug.log
+
+# Never commit private keys
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Google / Firebase service accounts
+serviceAccount*.json
+service-account*.json
+*-firebase-adminsdk-*.json
+google-credentials.json
+credentials.json
+
+# --------------------------
+# Logs
+# --------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --------------------------
+# Editor files
+# --------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --------------------------
+# macOS
+# --------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --------------------------
+# Windows
+# --------------------------
+Thumbs.db
+Desktop.ini
+
+# --------------------------
+# Temporary / cache
+# --------------------------
+.cache/
+.temp/
+tmp/
+temp/
+*.tmp
+*.temp
+
+# --------------------------
+# Coverage / testing
+# --------------------------
+coverage/
+.nyc_output/
+
+# --------------------------
+# TypeScript cache
+# --------------------------
+*.tsbuildinfo
+
+# --------------------------
+# Archives / backups
+# --------------------------
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Local backup files
+*.bak
+*.backup
+
+# --------------------------
+# Firebase Functions secrets
+# --------------------------
+functions/.env
+functions/.env.*
+functions/.secret.local
+functions/.runtimeconfig.json
+
+# --------------------------
+# Misc
+# --------------------------
+.eslintcache
+.stylelintcache
